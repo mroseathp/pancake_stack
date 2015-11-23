@@ -60,18 +60,18 @@ describe "different ways to eat pancakes" do
     plate.push(held_pancake2)
 
     # Reverses all of his pancakes
-    plate = plate.reverse
+    plate2 = plate.reverse
 
     # Finally eats his pancakes
-    pancake_to_eat = plate.pop
+    pancake_to_eat = plate2.pop
     expect(pancake_to_eat).to eq(pancake1)
     pancake_to_eat.eat
 
-    pancake_to_eat = plate.pop
+    pancake_to_eat = plate2.pop
     expect(pancake_to_eat).to eq(pancake3)
     pancake_to_eat.eat
 
-    pancake_to_eat = plate.pop
+    pancake_to_eat = plate2.pop
     expect(pancake_to_eat).to eq(pancake2)
     pancake_to_eat.eat
   end
