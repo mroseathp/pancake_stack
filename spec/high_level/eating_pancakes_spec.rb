@@ -7,6 +7,8 @@ describe "different ways to eat pancakes" do
   let(:pancake3) { Pancake.new('good') }
 
   it "allows a 'normal person' to eat pancakes" do
+    expect(plate.count).to eq(3)
+
     # Served 3 pancakes
     plate.push(pancake1)
     plate.push(pancake2)
